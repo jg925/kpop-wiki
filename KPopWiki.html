@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="shortcut icon" href="images/favicon.ico"/>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="finalwebsite.css"/>
+        <script type="text/javascript" src="finalwebsite.js"></script>
+        <title>KPop Wiki</title>
+    </head>
+    <body>
+        <div id="welcome">
+			<h1><img id="logo" src="images/KPopWikiLogo.jpg" alt="KPopWiki logo">    Welcome! 안녕하세요!</h1>
+			<p id="date"></p>
+			<script>
+				var d = new Date();
+				document.getElementById("date").innerHTML = d.toDateString();
+			</script>
+		</div>
+        <p>
+            You either came here because of a friend or of your own curiosity. 
+            There isn't really any other possibility, right? 
+        </p>
+        <p>
+            This is where you'll find all of the basic information about the Korean entertainment industry.
+			So far, each wiki page will describe the agency, and list 3 artists. You will see their names, debut years,
+			fandom names and colors. 
+            You'll learn about the major entertainment companies and how they function.
+        </p>
+        <h3>Click on an image to learn about the corresponding agency!</h3>
+        <div id="agencyButton">
+			<button id="JYP" onmouseover="buttonHover(this.id);" onmouseout="buttonOut(this.id);" onClick="buttonClick(this.id);">
+				<img src="images/jyplogo.jpg" alt="JYP logo"><br/><!--src:http://tinyurl.com/JYPlogo -->
+				JYP Entertainment
+			</button>
+			<button id="SM" onmouseover="buttonHover(this.id);" onmouseout="buttonOut(this.id);" onClick="buttonClick(this.id);">
+				<img src="images/smlogo.jpg" alt="SM logo"><br/><!--src:http://tinyurl.com/SMentLogo -->
+				SM Entertainment
+			</button>
+			<button id="YG" onmouseover="buttonHover(this.id);" onmouseout="buttonOut(this.id);" onClick="buttonClick(this.id);">
+				<img src="images/yglogo.jpg" alt="YG logo"><br/><!--src:http://tinyurl.com/YGlogo -->
+				YG Entertainment
+			</button>
+			<button id="Cube" onmouseover="buttonHover(this.id);" onmouseout="buttonOut(this.id);" onClick="buttonClick(this.id);">
+				<img src="images/cubelogo.jpg" alt="Cube logo"><br/><!--src:http://tinyurl.com/CubeEntLogo -->
+				Cube Entertainment
+			</button>
+        </div>
+    </body>
+</html>
